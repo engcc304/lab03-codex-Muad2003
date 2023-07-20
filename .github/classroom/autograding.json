@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Enter value and 3 product then QUIT.",
+      "setup": "g++ -o a.out ./Lab/Lab03-Codex.cpp",
+      "run": "./a.out",
+      "input": "Sam\r\npen 2 3\r\npencil 3 6\r\nboot 2 1.5\r\nEND 0 0",
+      "output": "--------------------------------------------------------------\r\nName                    Quantity    Unit Price       Total Price\r\n--------------------------------------------------------------\r\npen                            2          3.00              6.00\r\npencil                         3          6.00             18.00\r\nboot                           2          1.50              3.00\r\n--------------------------------------------------------------\r\n                                     TOTAL AMOUNT :        27.00\r\nEnter customer name [QUIT to stop] :",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
