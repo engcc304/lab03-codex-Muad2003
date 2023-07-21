@@ -25,7 +25,7 @@ int main() {
         NumberOfItems = i;
         TotalAmount = 0.0;
 
-        for (int i = 0; i < NumberOfItems; i++) {
+        for (i = 0; i < NumberOfItems; i++) {
             TotalPrice[i] = Quantity[i] * UnitPrice[i];
             TotalAmount += TotalPrice[i];
         }
@@ -36,8 +36,9 @@ int main() {
         for (i = 0; i < NumberOfItems; i++) {
             printf("%-20s %11d %13.2f %17.2f\n", Name[i], Quantity[i], UnitPrice[i], TotalPrice[i]);
             printf("--------------------------------------------------------------\n");
-            printf("%52s %11.2f\n", "TOTAL AMOUNT : ", TotalAmount);
         }
+
+        printf("%52s %11.2f\n", "TOTAL AMOUNT : ", TotalAmount);
 
         printf("Enter customer name [QUIT to stop] : ");
         scanf("%s", CustomerName);
